@@ -3,9 +3,9 @@
         <h1>Catalog</h1>
         <div class="catalog__box">
             <v-catalog-item
-                v-for="product in products"
-                :key="product.id"
-                :product_data="product"
+              v-for="product in this.$store.state.products"    
+              :key="product.id"       
+              :product_data="product"    
             ></v-catalog-item>
         </div>
     </div>
@@ -13,6 +13,7 @@
 
 <script>
 import VCatalogItem from "./v-catalog-item.vue"
+import { mapActions } from "vuex";
 
 export default {
 
@@ -22,58 +23,17 @@ export default {
     },
     data() {
         return {
-            products: [
-        {
-            id: "01",
-            company: "ItalTerm",
-            conturs: 1,
-            name: "CITY CLASS 25 FR",
-            install: "floor",
-            img: "oneContur/ItalTerm/25fr_1.webp"
-        },
-        {
-            id: "02",
-            company: "ItalTerm",
-            conturs: 1,
-            name: "CITY CLASS 30 FR",
-            install: "wall",
-            img: "oneContur/ItalTerm/25fr_2.webp"
-        },
-        {
-            id: "03",
-            company: "ItalTerm",
-            conturs: 2,
-            name: "CITY CLASS 35 FR",
-            install: "floor",
-            img: "oneContur/ItalTerm/25fr_3.webp"
-        },
-        {
-            id: "04",
-            company: "ItalTerm",
-            conturs: 1,
-            name: "CITY CLASS 30 FR",
-            install: "wall",
-            img: "oneContur/ItalTerm/25fr_4.webp"
-        },
-        {
-            id: "05",
-            company: "ItalTerm",
-            conturs: 2,
-            name: "CITY CLASS 30 FR",
-            install: "wall",
-            img: "oneContur/ItalTerm/25fr_5.webp"
-        },
-        {
-            id: "06",
-            company: "ItalTerm",
-            conturs: 2,
-            name: "CITY CLASS 30 FR",
-            install: "floor",
-            img: "oneContur/ItalTerm/25fr_6.webp"
+           
         }
-        
-    ]
-        }
+    },
+    computed: {},
+    methods: {
+        ...mapActions([
+            'GET_PRODUCTS_FROM_API'
+            ]),
+    },
+    mounted() {
+        this.GET_PRODUCTS_FROM_API ()
     }
 }
 </script>

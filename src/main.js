@@ -1,5 +1,9 @@
 import { createApp } from 'vue'
+import { store } from './vuex/store'
 import App from './App.vue'
-import '@/assets/scss/index.scss'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.use(store)
+
+app.mount('#app')
