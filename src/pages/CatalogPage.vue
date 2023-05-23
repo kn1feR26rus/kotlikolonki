@@ -1,12 +1,12 @@
 <template>
-    <div class="v-main-wrapper">
+    <div>
+        <h1 class="">CATALOG ROUTER</h1>
         <v-catalog></v-catalog>
-        <p class="asdsa">HOME</p>
     </div>
 </template>
 
 <script>
-import VCatalog from './v-catalog.vue'
+import VCatalog from '../components/v-catalog.vue'
 
     export default {
         components: {
@@ -21,7 +21,7 @@ import VCatalog from './v-catalog.vue'
         computed: {},
         methods: {},
         mounted() {
-          
+            console.log('HI WOW')
         },
     }
 </script>

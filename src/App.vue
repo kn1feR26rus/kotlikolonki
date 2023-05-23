@@ -1,16 +1,19 @@
 <template>
-    <v-main-wrapper></v-main-wrapper>
+   
+    <router-link to="/">HOME</router-link>
+    <router-link to="/catalog">CATALOG</router-link>
+    <router-view></router-view>
 </template>
 
 <script>
-import VMainWrapper from '@/components/v-main-wrapper.vue';
+
 
 
 
 export default {
   name: 'App',
   components: {
-    VMainWrapper,
+
   }
 }
 </script>

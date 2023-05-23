@@ -1,9 +1,24 @@
 import { createApp } from 'vue'
-import { store } from './vuex/store'
+import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
+import {store} from './vuex/store'
+import HomePage from '@/pages/HomePage.vue'
+import CatalogPage from '@/pages/CatalogPage.vue'
 
-const app = createApp(App)
+const router = createRouter({
+    history: createWebHistory(),
+    mode: 'history',
+    routes: [
+        {path: '/', name: 'HomePage', component: HomePage},
+        {path: '/catalog', name: 'CatalogPage', component: CatalogPage}
+    ]
+})
 
-app.use(store)
+createApp(App)
+.use(router)
+.use(store)
+.mount('#app')
 
-app.mount('#app')
+
+
+

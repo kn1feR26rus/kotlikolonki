@@ -57,6 +57,7 @@ $radius: 8px;
             border-radius: $radius;
             padding: 10px 35px;
             cursor: pointer;
+            margin-bottom: 20px;
         }
     }
 </style>

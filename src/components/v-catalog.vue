@@ -3,7 +3,7 @@
         <h1>Catalog</h1>
         <div class="catalog__box">
             <v-catalog-item
-              v-for="product in this.$store.state.products"    
+              v-for="product in PRODUCTS"    
               :key="product.id"       
               :product_data="product"    
             ></v-catalog-item>
@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import VCatalogItem from "./v-catalog-item.vue"
-import { mapActions } from "vuex";
+import VCatalogItem from "@/components/v-catalog-item.vue"
+import { mapActions, mapGetters } from "vuex";
 
 export default {
 
@@ -26,14 +26,23 @@ export default {
            
         }
     },
-    computed: {},
+    computed: {
+        ...mapGetters([
+            'PRODUCTS'
+        ]),
+    },
     methods: {
         ...mapActions([
             'GET_PRODUCTS_FROM_API'
             ]),
     },
     mounted() {
-        this.GET_PRODUCTS_FROM_API ()
+        this.GET_PRODUCTS_FROM_API()
+        .then((response) => {
+            if (response.data) {
+                console.log('DATA ARRIVED');
+            }
+        })
     }
 }
 </script>

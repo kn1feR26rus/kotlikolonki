@@ -17,6 +17,7 @@ export const store = createStore({
                   method: 'GET'
               });
               commit('SET_PRODUCTS_TO_STATE', products.data);
+              console.log(products);
               return products;
           } catch (error) {
               console.log(error);
