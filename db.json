@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "id": "01",
+            "company": "ItalTerm",
+            "conturs": 1,
+            "name": "CITY CLASS 25 FR",
+            "install": "wall",
+            "img": "~/assets/images/oneContur/ItalTerm/25fr_1.webp"
+        },
+        {
+            "id": "02",
+            "company": "ItalTerm",
+            "conturs": 1,
+            "name": "CITY CLASS 30 FR",
+            "install": "wall",
+            "img": "~/assets/images/oneContur/ItalTerm/25fr_2.webp"
+        },
+        {
+            "id": "03",
+            "company": "ItalTerm",
+            "conturs": 1,
+            "name": "CITY CLASS 35 FR",
+            "install": "wall",
+            "img": "~/assets/images/oneContur/ItalTerm/25fr_3.webp"
+        }
+    ]
+}
