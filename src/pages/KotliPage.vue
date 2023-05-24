@@ -1,16 +1,18 @@
 <template>
-    <div class="v-main-wrapper">
-        <v-catalog></v-catalog>
-        <p class="asdsa">HOME</p>
+    <div>
+        <h1 class="">КООООООООТЛЫ</h1>
+        <div class="catalog__container">
+            <v-catalog-kotli></v-catalog-kotli>
+        </div>
     </div>
 </template>
 
 <script>
-import VCatalog from './v-catalog.vue'
+import vCatalogKotli from '../components/v-catalog-kotli.vue'
 
     export default {
         components: {
-            VCatalog,
+            vCatalogKotli,
         },
         props: {},
         data() {
@@ -21,7 +23,6 @@ import VCatalog from './v-catalog.vue'
         computed: {},
         methods: {},
         mounted() {
-          
         },
     }
 </script>

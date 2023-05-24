@@ -1,19 +1,21 @@
 <template>
-   
-    <router-link to="/">HOME</router-link>
-    <router-link to="/catalog">CATALOG</router-link>
-    <router-view></router-view>
+  <v-header></v-header>
+  <div class="container">
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
+  </div>
 </template>
 
 <script>
 
-
+import vHeader from '@/components/v-header'
 
 
 export default {
   name: 'App',
   components: {
-
+    vHeader
   }
 }
 </script>

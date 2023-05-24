@@ -1,6 +1,6 @@
 <template>
     <div class="catalog__item">
-        <img :src=" require('../assets/images' + product_data.img)" alt="">
+        <img :src="require('../assets/images' + product_data.img)" alt="">
             <p>{{ product_data.name }}</p>
             <button>Подробнее</button>
             <button>Узнать цену</button>
@@ -39,9 +39,7 @@ $radius: 8px;
         align-items: center;
 
         img {
-            width: 80%;
-            height: 300px;
-            object-fit: contain;
+            height: 250px;
             margin-bottom: 20px;
         }
 
