@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import {store} from './vuex/store'
+import scss from '@/assets/scss/index.scss'
 import HomePage from '@/pages/HomePage.vue'
 import CatalogPage from '@/pages/CatalogPage.vue'
 import KotliPage from '@/pages/KotliPage.vue'
@@ -21,6 +22,7 @@ const router = createRouter({
 createApp(App)
 .use(router)
 .use(store)
+.use(scss)
 .mount('#app')
 
 

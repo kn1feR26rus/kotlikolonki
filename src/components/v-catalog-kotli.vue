@@ -16,7 +16,7 @@
               :product_data="product"    
             ></v-catalog-item>
         </div>
-        <div class="catalog__box" v-if="oneCounter">
+        <div class="catalog__box" v-if="filterCounter">
             <v-catalog-item
               v-for="product in filterByClass"    
               :key="product.id"       
@@ -39,7 +39,7 @@ export default {
     data() {
         return {
             allItems: true,
-            oneCounter: false,
+            filterCounter: false,
             isShow: false,
             installed: '',
             sortedProducts: [],
@@ -60,14 +60,12 @@ export default {
                 filtered = data.filter(x => x.conturs == counter)
                 data = filtered
             }
-            newData(this.PRODUCTS, this.oneCounter);
+            newData(this.PRODUCTS, this.filterCounter);
 
             if (this.installed) {
                     let filteredByMotion = filtered.filter(x => x.install == this.installed)
                     data = filteredByMotion
             }
-            
-            
       return data
     },
     },
@@ -78,12 +76,13 @@ export default {
             showAll() {
                 this.installed = ''
                 this.allItems = true;
-                this.oneCounter = false;
+                this.filterCounter = false;
             },
 
             showOneCounter(count) {
                 this.allItems = false;
-                this.oneCounter = count;
+                this.filterCounter = count;
+                this.installed = ''
             },
             forWall() {
                 this.installed = 'wall'

@@ -78,7 +78,7 @@
                 "class": "gas",
                 "conturs": 2,
                 "name": "CITY CLASS 20 F",
-                "install": "wall",
+                "install": "floor",
                 "img": "/twoContur/ItalTerm/12fr/12fr_8.webp"
             },
             {
@@ -108,7 +108,7 @@
                 "class": "gas",
                 "conturs": 2,
                 "name": "CITY CLASS 35 F",
-                "install": "wall",
+                "install": "floor",
                 "img": "/twoContur/ItalTerm/12fr/12fr_8.webp"
             },
             {
@@ -139,7 +139,7 @@
                 "company": "ItalTerm",
                 "prop": "kotel",
                 "class": "gas",
-                "conturs": 1,
+                "conturs": 2,
                 "name": "CITY CLASS 30 FR",
                 "install": "floor",
                 "img": "/oneContur/ItalTerm/30fr/30fr_6.webp"
@@ -149,7 +149,7 @@
                 "company": "ItalTerm",
                 "prop": "kotel",
                 "class": "gas",
-                "conturs": 1,
+                "conturs": 2,
                 "name": "CITY CLASS 35 FR",
                 "install": "floor",
                 "img": "/oneContur/ItalTerm/35fr/35fr_7.webp"
@@ -159,7 +159,7 @@
                 "company": "ItalTerm",
                 "prop": "kotel",
                 "class": "gas",
-                "conturs": 1,
+                "conturs": 2,
                 "name": "CITY CLASS 40 FR",
                 "install": "wall",
                 "img": "/oneContur/ItalTerm/40fr/40fr_7.webp"
@@ -179,7 +179,7 @@
                 "company": "ItalTerm",
                 "prop": "kotel",
                 "class": "electro",
-                "conturs": 1,
+                "conturs": 2,
                 "name": "CITY CLASS 35 FR",
                 "install": "floor",
                 "img": "/oneContur/ItalTerm/25fr/25fr_7.webp"
