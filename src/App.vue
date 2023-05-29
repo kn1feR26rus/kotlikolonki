@@ -2,7 +2,9 @@
   <div class="container">
     <v-header></v-header>
     <keep-alive>
-      <router-view></router-view>
+      <div class="wrapper">
+        <router-view></router-view>
+      </div>
     </keep-alive>
   </div>
 </template>

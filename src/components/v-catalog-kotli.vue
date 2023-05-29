@@ -50,7 +50,6 @@ export default {
         ...mapGetters([
             'PRODUCTS'
         ]),
-     
 
     filterByClass() {
             let data = []

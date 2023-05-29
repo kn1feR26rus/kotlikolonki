@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1 class="">CATALOG ROUTER</h1>
         <div class="catalog__container">
             <router-link class="catalog__category" to="/kotli">КОТЛЫ</router-link>
             <router-link class="catalog__category" to="/kolonki">КОЛОНКИ</router-link>
@@ -31,25 +30,24 @@
     }
 </script>
 
-<style lang="scss">
-    .v-main-wrapper {
-        display: flex;
-    }
+<style lang="scss" scoped>
     .catalog__container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-direction: row;
 
         .catalog__category {
             display: flex;
-            max-width: 48%;
+            max-width: 23%;
             width: 100%;
             margin-bottom: 30px;
             height: 300px;
-            background-color: aquamarine;
             align-items: center;
             justify-content: center;
             font-size: 25px;
+            border: 1px solid blue;
+            border-radius: 8px;
         }
     }
 

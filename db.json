@@ -120,8 +120,87 @@
                 "name": "CITY CLASS 40 F",
                 "install": "wall",
                 "img": "/twoContur/ItalTerm/12fr/12fr_8.webp"
+            },
+            {
+                "id": "13",
+                "company": "Baxi",
+                "prop": "kotel",
+                "class": "gas",
+                "conturs": 1,
+                "name": "ECO 4S",
+                "install": "wall",
+                "img": "/oneContur/Baxi/eco-4s/eco-4s_1.webp"
+            },
+            {
+                "id": "14",
+                "company": "Baxi",
+                "prop": "kotel",
+                "class": "gas",
+                "conturs": 2,
+                "name": "ECO 4S",
+                "install": "wall",
+                "img": "/twoContur/Baxi/eco-4s/eco-4s_1.webp"
+            },
+            {
+                "id": "15",
+                "company": "Baxi",
+                "prop": "kotel",
+                "class": "gas",
+                "conturs": 1,
+                "name": "ECO FOUR",
+                "install": "wall",
+                "img": "/oneContur/Baxi/eco-four/eco-four_1.webp"
+            },
+            {
+                "id": "16",
+                "company": "Baxi",
+                "prop": "kotel",
+                "class": "gas",
+                "conturs": 2,
+                "name": "ECO FOUR",
+                "install": "wall",
+                "img": "/twoContur/Baxi/eco-four/eco-four_1.webp"
+            },
+            {
+                "id": "17",
+                "company": "Baxi",
+                "prop": "kotel",
+                "class": "gas",
+                "conturs": 1,
+                "name": "ECO NOVA",
+                "install": "wall",
+                "img": "/oneContur/Baxi/eco-nova/eco-nova_1.webp"
+            },
+            {
+                "id": "18",
+                "company": "Baxi",
+                "prop": "kotel",
+                "class": "gas",
+                "conturs": 2,
+                "name": "ECO NOVA",
+                "install": "wall",
+                "img": "/twoContur/Baxi/eco-nova/eco-nova_1.webp"
+            },
+            {
+                "id": "19",
+                "company": "Baxi",
+                "prop": "kotel",
+                "class": "gas",
+                "conturs": 1,
+                "name": "LUNA 3",
+                "install": "wall",
+                "img": "/oneContur/Baxi/luna3/luna3_1.webp"
+            },
+            {
+                "id": "20",
+                "company": "Baxi",
+                "prop": "kotel",
+                "class": "gas",
+                "conturs": 2,
+                "name": "LUNA 3",
+                "install": "wall",
+                "img": "/twoContur/Baxi/luna3/luna3_1.webp"
             }
-
         ],
         "kolonki": [
             {
