@@ -33,6 +33,9 @@
                     <span class="catalog__item-text">Шляпка</span>
                 </router-link>
             </div>
+            <router-link class="catalog__all" to="/catalog">
+                <span class="catalog__item-text">Вся продукция</span>
+            </router-link>
         </section>
         <section class="about">
             <h2 class="about__title">О компании</h2>
@@ -56,6 +59,16 @@
                     </a>
                 </div>
                 <img src="@/assets/images/about-banner.webp" alt="" class="about__img">
+            </div>
+        </section>
+        <section class="partners">
+            <h2 class="partners__title">Наши партнеры</h2>
+            <div class="partners__container">
+                <img src="@/assets/images/partners/ital.png" class="partners__img" alt="partners__img">
+                <img src="@/assets/images/partners/baxi.png" class="partners__img" alt="partners__img">
+                <img src="@/assets/images/partners/ariston.svg" class="partners__img" alt="partners__img">
+                <img src="@/assets/images/partners/navien.svg" class="partners__img" alt="partners__img">
+                <img src="@/assets/images/partners/zanunssi.svg" class="partners__img" alt="partners__img">
             </div>
         </section>
     </main>
@@ -106,6 +119,23 @@
             padding-bottom: 20px;
             border-bottom: 3px solid rgb(61, 131, 212);
             width: 60%;
+        }
+        .catalog__all {
+            background-color: rgb(61, 131, 212);
+            border-radius: 15px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            width: 300px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            margin: 30px auto;
+            font-size: 25px;
+            transition: all .5s;
+        }
+        .catalog__all:hover {
+            transform: scale(1.07);
         }
 
         .catalog__container {
@@ -203,6 +233,7 @@
                         width: 10px;
                         background-color: rgb(61, 131, 212);
                         border-radius: 15px 0 0 15px;
+                        transition: all .7s;
                     }
                     .about__item-text {
                         display: flex;
@@ -212,17 +243,48 @@
                         color: rgb(61, 131, 212);
                         font-size: 25px;
                         flex-direction: column;
-
+                        transition: all 1.2s;
                         span {
                             font-size: 40px;
                         }
                     }
                 }
+                .about__item:hover .about__item-bg {
+                    width: 100%;
+                    border-radius: 15px;
+                }
+                .about__item:hover .about__item-text {
+                    color: white;
+                    position: relative;
+                }
+
             }
             .about__img {
                 width: 48%;
                 border-radius: 15px;
                 height: 430px;
+            }
+        }
+    }
+    .partners {
+        padding-bottom: 50px;
+        .partners__title {
+            text-align: left;
+            color: rgb(61, 131, 212);
+            font-size: 35px;
+            margin: 0 0 40px 20px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid rgb(61, 131, 212);
+            width: 60%;
+        }
+
+        .partners__container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .partners__img {
+                width: 120px;
             }
         }
     }

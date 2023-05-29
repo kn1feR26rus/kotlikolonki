@@ -1,5 +1,15 @@
 <template>
     <div>
+        <section class="banner">
+            <div class="banner__box">
+                <h1 class="banner__title">
+                    Котлы Колонки
+                </h1>
+                <p class="banner__text">
+                    Самый недежный поставщик
+                </p>
+            </div>
+        </section>
         <div class="catalog__container">
             <router-link class="catalog__category" to="/kotli">КОТЛЫ</router-link>
             <router-link class="catalog__category" to="/kolonki">КОЛОНКИ</router-link>
@@ -31,6 +41,34 @@
 </script>
 
 <style lang="scss" scoped>
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('@/assets/images/catalog-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: right;
+    background-attachment: fixed;
+    
+    .banner__box {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 230px;
+        left: 100px;
+        .banner__title {
+            color: white;
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+        .banner__text {
+            color: white;
+            font-size: 35px;
+        }
+    }
+}
     .catalog__container {
         display: flex;
         flex-wrap: wrap;
